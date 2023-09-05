@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add filter to an image</title>
+</head>
+<body>
+
+    <h1>Update CSS Variables with JS</h1>
+
+    <div>
+        <label></label>
+        <input type="range" data-type="spacing" oninput="update(this)" min="0" max="100" id="">
+    </div>
+    <div>
+        <label></label>
+        <input type="range" data-type="blur" oninput="update(this)" min="0" max="30" id="">
+    </div>
+    <div>
+        <label></label>
+        <input type="color" data-type="color" oninput="update(this)" id="">
+    </div>
+
+    <div id="box">
+        <img src="tanjiro.png" id="img" alt="" height="400px" width="600px">
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

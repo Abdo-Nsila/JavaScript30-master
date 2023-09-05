@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dosis:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+#clock{
+    background-image: url("./image/clock_without_hands.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 494px;
+    width: 488px;
+    outline: 20px solid gold;
+    outline-offset: -20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center{
+    z-index: 10;
+    height: 20px;
+    width: 20px;
+    background-color: gold;
+    outline: 5px solid black;
+    outline-offset: -10px;
+    border-radius: 50%;
+}
+
+.flesh{
+    transform: translateY(-50%);
+    background-color: black;
+    position: absolute;
+    transform-origin: bottom center;
+    width: 10px;  
+    border-radius: 100% 100% 0 0;
+    transition: all .5s cubic-bezier(1, .5, .5, 1.5);
+}
+
+#flesh1 {
+    height: 200px;
+    border-top: 20px solid red;
+}
+
+#flesh2 { 
+    height: 150px;
+    border-top: 20px solid blue;
+}
+
+#flesh3 {  
+    height: 100px;
+    border-top: 20px solid yellow;
+}
+
+#num-clock{
+    transition: all .2s;
+    color: white;
+    border: 3px dashed gold;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#num-clock:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px gold;
+}
