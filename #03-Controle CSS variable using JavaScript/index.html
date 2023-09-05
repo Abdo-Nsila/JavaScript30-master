@@ -8,24 +8,28 @@
 </head>
 <body>
 
-    <h1>Update CSS Variables with JS</h1>
+    <main>
+        <h1>Update CSS Variables with JS</h1>
 
-    <div>
-        <label></label>
-        <input type="range" data-type="spacing" oninput="update(this)" min="0" max="100" id="">
-    </div>
-    <div>
-        <label></label>
-        <input type="range" data-type="blur" oninput="update(this)" min="0" max="30" id="">
-    </div>
-    <div>
-        <label></label>
-        <input type="color" data-type="color" oninput="update(this)" id="">
-    </div>
+        <form>
+            <div class="box">
+                <label>Change Spacing</label>
+                <input type="range" data-type="spacing" oninput="update(this)" min="0" max="100" id="">
+            </div>
+            <div class="box">
+                <label>Change Range</label>
+                <input type="range" data-type="blur" oninput="update(this)" min="0" max="30" id="">
+            </div>
+            <div class="box">
+                <label>Change Color</label>
+                <input type="color" data-type="color" oninput="update(this)" id="">
+            </div>
 
-    <div id="box">
-        <img src="tanjiro.png" id="img" alt="" height="400px" width="600px">
-    </div>
+        </form>
+        <div class="box" id="box">
+            <img src="tanjiro.png" id="img" alt="" height="400px" width="600px">
+        </div>
+    </main>
 
     <script src="main.js"></script>
     
